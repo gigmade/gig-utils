@@ -2,7 +2,7 @@ const spawnSync = require('cross-spawn').sync
 const { resolveBin, appDirectory } = require('bebbi-scripts')
 const path = require('path')
 
-// Using gig-scripts/.storybook
+// Using gig-utils/.storybook
 // const storyConfigPath = path.join(__dirname, '../config/.storybook')
 
 // Using msm-editor/.storybook

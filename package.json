@@ -1,5 +1,5 @@
 {
-  "name": "gig-scripts",
+  "name": "gig-utils",
   "version": "0.1.0",
   "description": "Package that contains everything needed to run storybook",
   "bin": "dist/cjs/bin.js",
@@ -74,10 +74,13 @@
     "@storybook/node-logger": "7.4.0",
     "@storybook/react": "^7.4.0",
     "@storybook/react-webpack5": "^7.4.0",
-    "bebbi-scripts": "^3.0.2",
+    "bebbi-scripts": "^0.3.2",
     "cross-spawn": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "postcss-loader": "^7.3.3",
     "rimraf": "^5.0.1",
-    "storybook": "^7.4.0"
+    "storybook": "^7.4.0",
+    "style-loader": "^3.3.3"
   },
   "scripts": {
     "build": "rimraf dist && bebbi-scripts build cjs types && yarn postBuild",

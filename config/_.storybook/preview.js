@@ -20,11 +20,6 @@ const preview = {
       },
       defaultTheme: 'light',
     }),
-    // (Story) => (
-    //   <div className="bg-bodyBg-light dark:bg-bodyBg-dark h-[90vh] w-full p-2">
-    //     <Story />
-    //   </div>
-    // ),
     (Story) =>
       React.createElement(
         'div',
