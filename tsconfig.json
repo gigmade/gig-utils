@@ -1,0 +1,4 @@
+{
+  "extends": "bebbi-scripts/tsconfig.json",
+  "compilerOptions": { "jsx": "react-jsx" }
+}

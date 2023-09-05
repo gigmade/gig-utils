@@ -1,0 +1,95 @@
+{
+  "name": "gig-scripts",
+  "version": "0.1.0",
+  "description": "Package that contains everything needed to run storybook",
+  "bin": "dist/cjs/bin.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./tsconfig.json": "./tsconfig.json",
+    "./tsconfig": "./tsconfig.json",
+    "./babel": "./babel.js",
+    "./sbMain": "./dist/cjs/config/.storybook/main.js",
+    "./sbPreview": "./dist/cjs/config/.storybook/preview.js"
+  },
+  "files": [
+    "dist",
+    "tsconfig.json",
+    "babel.js"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "warnOnUnsupportedTypeScriptVersion": false
+    },
+    "extends": [
+      "react-app"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": 2
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/**/*.stories.{js,jsx,ts,tsx}"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "babel": {
+    "presets": [
+      "./dist/cjs/config/babelrc.js"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^18.*"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.11",
+    "@storybook/addon-actions": "^7.4.0",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-styling-webpack": "^0.0.3",
+    "@storybook/addon-themes": "^7.4.0",
+    "@storybook/cli": "^7.4.0",
+    "@storybook/node-logger": "7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/react-webpack5": "^7.4.0",
+    "bebbi-scripts": "^3.0.2",
+    "cross-spawn": "^7.0.3",
+    "rimraf": "^5.0.1",
+    "storybook": "^7.4.0"
+  },
+  "scripts": {
+    "build": "rimraf dist && bebbi-scripts build cjs types && yarn postBuild",
+    "postBuild": "node dist/cjs/postBuild.js"
+  },
+  "author": "Stefan Baumann <stefan.baumann@gigmade.com>",
+  "homepage": "www.gigmade.com",
+  "license": "UNLICENSED",
+  "repository": "",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "react": "^18.2.0",
+    "vite": "^4.4.9"
+  }
+}
