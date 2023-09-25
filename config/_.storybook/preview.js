@@ -6,7 +6,7 @@ function withDarkDecorator(Story) {
   return React.createElement(
     'div',
     {
-      className: 'bg-bodyBg-light dark:bg-bodyBg-dark h-[90vh] w-full p-2',
+      className: 'bg-bodyBg-light dark:bg-bodyBg-dark p-4',
     },
     React.createElement(Story)
   )
