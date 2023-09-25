@@ -1,5 +1,5 @@
 // https://storybook.js.org/docs/react/faq#how-do-i-fix-module-resolution-in-special-environments
-import path from 'path'
+const path = require('path')
 
 const wrapForPnp = (packageName) =>
   path.dirname(require.resolve(path.join(packageName, 'package.json')))
