@@ -28,7 +28,7 @@ const preview = {
         light: '',
         dark: 'dark',
       },
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
     }),
     withDarkDecorator,
   ],
