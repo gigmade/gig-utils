@@ -32,6 +32,11 @@ const preview = {
     }),
     withDarkDecorator,
   ],
+  options: {
+    storySort: {
+      order: ['Arrangements', 'Components'],
+    },
+  },
 }
 
 export default preview
