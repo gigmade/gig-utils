@@ -1,6 +1,6 @@
 {
   "name": "gig-utils",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Package that contains everything needed to run storybook",
   "bin": "dist/cjs/bin.js",
   "types": "dist/types/index.d.ts",
