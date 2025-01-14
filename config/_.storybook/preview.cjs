@@ -1,6 +1,8 @@
 // import { BgWrapper } from './BgWrapper'
-import React from 'react'
-import { withThemeByClassName } from '@storybook/addon-themes'
+// import React from 'react'
+// import { withThemeByClassName } from '@storybook/addon-themes'
+const React = require('react')
+const { withThemeByClassName } = require('@storybook/addon-themes')
 
 function withDarkDecorator(Story) {
   return React.createElement(
@@ -39,4 +41,4 @@ const preview = {
   },
 }
 
-export default preview
+module.exports = preview

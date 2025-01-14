@@ -7,13 +7,13 @@
   "exports": {
     ".": {
       "require": "./dist/cjs/index.js",
-      "default": "./dist/cjs/index.js"
+      "import": "./dist/cjs/index.js"
     },
     "./tsconfig.json": "./tsconfig.json",
     "./tsconfig": "./tsconfig.json",
     "./babel": "./babel.js",
-    "./sbMain": "./dist/cjs/config/.storybook/main.js",
-    "./sbPreview": "./dist/cjs/config/.storybook/preview.js"
+    "./sbMain": "./dist/cjs/config/.storybook/main.cjs",
+    "./sbPreview": "./dist/cjs/config/.storybook/preview.cjs"
   },
   "files": [
     "dist",
@@ -74,7 +74,7 @@
     "@storybook/node-logger": "7.6.17",
     "@storybook/react": "^7.6.17",
     "@storybook/react-webpack5": "^7.6.17",
-    "bebbi-scripts": "^0.5.8",
+    "bebbi-scripts": "^0.6.1",
     "cross-spawn": "^7.0.3",
     "css-loader": "^6.8.1",
     "postcss-loader": "^7.3.3",
