@@ -74,7 +74,7 @@
     "@storybook/node-logger": "7.6.17",
     "@storybook/react": "^7.6.17",
     "@storybook/react-webpack5": "^7.6.17",
-    "bebbi-scripts": "^0.6.2",
+    "bebbi-scripts": "^0.7.0",
     "cross-spawn": "^7.0.3",
     "css-loader": "^6.8.1",
     "postcss-loader": "^7.3.3",
@@ -82,7 +82,7 @@
     "style-loader": "^3.3.3"
   },
   "scripts": {
-    "build": "yarn clean && bebbi-scripts build cjs types && yarn postBuild",
+    "build": "bebbi-scripts build && yarn postBuild",
     "postBuild": "node dist/cjs/postBuild.js",
     "clean": "bebbi-scripts clean",
     "validate": "bebbi-scripts validate",
