@@ -8,7 +8,6 @@ const config = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     wrapForPnp('@storybook/addon-links'),
-    wrapForPnp('@storybook/addon-essentials'),
     wrapForPnp('@storybook/addon-themes'),
     // See https://github.com/storybookjs/addon-styling-webpack/issues/1
     {
@@ -38,14 +37,12 @@ const config = {
         ],
       },
     },
-    wrapForPnp("@storybook/addon-webpack5-compiler-swc")
+    wrapForPnp('@storybook/addon-webpack5-compiler-swc'),
+    wrapForPnp('@storybook/addon-docs'),
   ],
   framework: {
     name: wrapForPnp('@storybook/react-webpack5'),
     options: {},
-  },
-  docs: {
-    autodocs: 'tag',
   },
 }
 
