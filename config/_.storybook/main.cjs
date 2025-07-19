@@ -38,6 +38,7 @@ const config = {
         ],
       },
     },
+    wrapForPnp("@storybook/addon-webpack5-compiler-swc")
   ],
   framework: {
     name: wrapForPnp('@storybook/react-webpack5'),
