@@ -1,3 +1,2 @@
-export * from '@storybook/react'
-export * as addonActions from '@storybook/addon-actions'
-export * as addonActionsDecorator from '@storybook/addon-actions/decorator'
+export * from '@storybook/react-webpack5'
+export * as addonActions from 'storybook/actions'
