@@ -1,3 +1,6 @@
 {
-  "extends": "bebbi-scripts/tsconfig.json"
+  "extends": "bebbi-scripts/tsconfig.json",
+  "compilerOptions": {
+    "moduleDetection": "force"
+  }
 }
