@@ -87,6 +87,7 @@
     "postBuild": "node dist/cjs/postBuild.js",
     "clean": "bebbi-scripts clean",
     "validate": "bebbi-scripts validate",
+    "pre-commit": "bebbi-scripts pre-commit",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
