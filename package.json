@@ -25,31 +25,6 @@
       "prettier --write"
     ]
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "eslintConfig": {
-    "parserOptions": {
-      "warnOnUnsupportedTypeScriptVersion": false
-    },
-    "extends": [
-      "react-app"
-    ],
-    "rules": {
-      "import/no-extraneous-dependencies": 2
-    },
-    "overrides": [
-      {
-        "files": [
-          "src/**/*.stories.{js,jsx,ts,tsx}"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
   "babel": {
     "presets": [
       "./dist/cjs/config/babelrc.js"
