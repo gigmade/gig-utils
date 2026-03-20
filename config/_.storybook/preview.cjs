@@ -10,7 +10,7 @@ function withDarkDecorator(Story) {
     {
       className: 'bg-bodyBg-light dark:bg-bodyBg-dark p-4',
     },
-    React.createElement(Story)
+    React.createElement(Story),
   )
 }
 
