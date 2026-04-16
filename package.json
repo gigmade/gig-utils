@@ -49,7 +49,7 @@
     "@storybook/cli": "9.0.17",
     "@storybook/react-webpack5": "9.0.17",
     "@storybook/test-runner": "^0.23.0",
-    "bebbi-scripts": "^0.7.3",
+    "bebbi-scripts": "^0.7.10",
     "cross-spawn": "^7.0.3",
     "css-loader": "^6.8.1",
     "playwright": "^1.54.1",
@@ -58,7 +58,7 @@
     "style-loader": "^3.3.3"
   },
   "scripts": {
-    "build": "bebbi-scripts build && yarn postBuild",
+    "build": "bebbi-scripts build && pnpm postBuild",
     "postBuild": "node dist/cjs/postBuild.js",
     "clean": "bebbi-scripts clean",
     "validate": "bebbi-scripts validate",
